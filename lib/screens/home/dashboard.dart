@@ -41,14 +41,14 @@ class _dashboardScreenState extends State<dashboardScreen> {
   Widget build(BuildContext context) {
     final user
     = Provider.of<Userdata?>(context);
-    AuthService _auth = AuthService();
-    void _showSettingsPanel() {
+    AuthService auth = AuthService();
+    void showSettingsPanel() {
       showModalBottomSheet(context: context, builder: (context) {
         return Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 60.0),
           child: TextButton.icon(onPressed: () async {
-              await _auth.signOut();
+              await auth.signOut();
               Navigator.pop(context);
             },
                 icon: const Icon(Icons.person_2),
@@ -91,7 +91,7 @@ class _dashboardScreenState extends State<dashboardScreen> {
                 ),
                 icon: const Icon(Icons.settings),
                 label: const Text(""),
-                onPressed: () => _showSettingsPanel(),
+                onPressed: () => showSettingsPanel(),
               ),
             ),
           ],

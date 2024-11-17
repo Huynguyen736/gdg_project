@@ -5,7 +5,6 @@ import 'package:gdg_project/screens/profile.dart';
 import 'package:gdg_project/widgets/custom_scaffold.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import 'edit_member.dart';
 
 class member_list_memview extends StatefulWidget {
   const member_list_memview({super.key, required this.branch});

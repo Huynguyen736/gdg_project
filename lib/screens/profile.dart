@@ -24,7 +24,7 @@ class profile extends StatefulWidget {
 class _profileState extends State<profile> {
 
   final AuthService _auth = AuthService();
-  static final String title = "Profile";
+  static const String title = "Profile";
 
   late String _contactID;
   late String _name;
@@ -59,7 +59,7 @@ class _profileState extends State<profile> {
           automaticallyImplyLeading: true,
           backgroundColor: Colors.transparent,
           elevation: 0,
-          actions: [],
+          actions: const [],
         ),
         body: ListView(
           physics: const BouncingScrollPhysics(),

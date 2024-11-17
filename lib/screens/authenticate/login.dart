@@ -16,7 +16,7 @@ class signinScreen extends StatefulWidget {
 
 class _SignInScreenState extends State<signinScreen> {
 
-  AuthService _auth = AuthService();
+  final AuthService _auth = AuthService();
   final _formSignInKey = GlobalKey<FormState>();
   bool rememberPassword = true;
   final _emailController = TextEditingController();

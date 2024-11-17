@@ -51,6 +51,7 @@ class _AddContactPageState extends State<AddContactPage> {
     emailController.dispose();
     dateController.dispose();
   }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

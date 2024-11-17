@@ -76,6 +76,7 @@ class _EditMemberPageState extends State<EditMemberPage> {
     emailController.dispose();
     dateController.dispose();
   }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -98,7 +99,7 @@ class _EditMemberPageState extends State<EditMemberPage> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: nameController,
