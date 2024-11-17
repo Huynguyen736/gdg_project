@@ -9,9 +9,9 @@ import 'package:gdg_project/models/user.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Message().initNotidications();
+  // await Message().initNotidications();
   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
 }
